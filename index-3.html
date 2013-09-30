@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link href='css/OpenSans400600700.css' rel='stylesheet' type='text/css'>
+<link href='css/Lato400700.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script src="js/forms.js"></script>
+
+<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <link href='css/OpenSans400.css' rel='stylesheet' type='text/css'>
+    <link href='css/OpenSans600.css' rel='stylesheet' type='text/css'>    
+    <link href='css/OpenSans700.css' rel='stylesheet' type='text/css'>
+    <link href='css/Lato400.css' rel='stylesheet' type='text/css'>
+    <link href='css/Lato700.css' rel='stylesheet' type='text/css'>
+  <![endif]-->
+</head>
+
+<body>
+
+<!--============================== header =================================-->
+<header>
+  <div class="container">
+    <div class="navbar navbar_ clearfix extra">
+      <h1 class="brand"><a href="index.html"><img alt="M4" src="img/logo.gif"></a></h1>
+      <form id="search" action="search.php" method="GET" accept-charset="utf-8" >
+        <div class="clearfix">
+          <input type="text" onFocus="if(this.value =='Search' ) this.value=''" onBlur="if(this.value=='') this.value='Search'" value="Search" name="s">
+          <a href="#" onClick="document.getElementById('search').submit()" ></a> </div>
+      </form>
+      <div class="nav-collapse nav-collapse_  collapse">
+        <ul class="nav sf-menu">
+          <li><a href="index.html">About us</a></li>
+          <li><a href="index-1.html">Services</a>
+            <ul>
+              <li><a href="#">Small business <span>Custom Trainings</span></a></li>
+              <li><a href="#">Modern tools <span>On-Demand Administration</span></a>
+                <ul>
+                  <li><a href="#">Software <span>Applying technologies</span></a></li>
+                  <li><a href="#">Technology <span>Linking Employees &amp; Strategy</span></a></li>
+                  <li><a href="#">FAQ <span>Feedback &amp; Appraisals</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#">Case studies <span>Integration and Consulting</span></a></li>
+            </ul>
+          </li>
+          <li><a href="index-2.html">Products</a></li>
+          <li class="active"><a href="index-3.html">Contacts</a></li>
+          <li><a href="index-4.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--============================== content =================================-->
+
+<div id="content" class="extra-content">
+  <div class="container">
+    <h3>contact us</h3>
+    <div class="map img-polaroid">
+      <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"> </iframe>
+    </div>
+  </div>
+  <div class="row-2">
+    <div class="container">
+      <div class="row">
+        <article class="span4">
+          <h3>Address</h3>
+          <address class="address-1">
+          <strong>Address 1</strong> <span>The Company Name Inc.</span>
+          <p>8901 Marmora Road, Glasgow, D04 89GR.</p>
+          <strong>Telephone</strong>
+          <p> <span>+1 800 559 6580</span> <span>+1 959 603 6035</span></p>
+          <strong>Address 2</strong> <span>The Company Name Inc.</span>
+          <p>9863 - 9867 Mill Road, Cambridge, MG09 99HT</p>
+          </address>
+        </article>
+        <article class="span8">
+          <h3>contact information</h3>
+          <form id="contact-form">
+            <div class="success">
+              <div class="inner-form"> Contact form submitted! <strong>We will be in touch soon.</strong></div>
+            </div>
+            <fieldset>
+              <div class="coll-1">
+                <label class="name" >
+                  <input type="text" value="Name*">
+                  <br>
+                  <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+              </div>
+              <div class="coll-2">
+                <label class="email">
+                  <input type="email" value="E-mail*">
+                  <br>
+                  <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+              </div>
+              <div class="coll-3">
+                <label class="phone notRequired">
+                  <input type="tel" value="Telephone">
+                  <br>
+                  <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <label class="message">
+                  <textarea>Comment*</textarea>
+                  <br>
+                  <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
+              </div>
+              <div class="buttons-wrapper"><a class="link" data-type="submit">submit</a> <span>*Required fields</span></div>
+            </fieldset>
+          </form>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--============================== footer =================================-->
+<footer>
+  <div class="container clearfix">
+    <div class="privacy"><span>Consectetur industrial theme &copy; 2013</span> <a href="index-5.html">Privacy policy</a></div>
+    <img src="img/logo-footer.png" alt="" class="logo-footer"/> </div>
+</footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

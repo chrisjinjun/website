@@ -1,0 +1,266 @@
+/**************************
+*
+*	GENERAL
+*
+**************************/
+.slider{background:#fff;
+position:relative;
+
+}
+
+
+.camera_wrap img, 
+.camera_wrap ol, .camera_wrap ul, .camera_wrap li,
+.camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
+.camera_thumbs_wrap a, .camera_thumbs_wrap img, 
+.camera_thumbs_wrap ol, .camera_thumbs_wrap ul, .camera_thumbs_wrap li,
+.camera_thumbs_wrap table, .camera_thumbs_wrap tbody, .camera_thumbs_wrap tfoot, .camera_thumbs_wrap thead, .camera_thumbs_wrap tr, .camera_thumbs_wrap th, .camera_thumbs_wrap td {
+	background: none;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style: none
+}
+.camera_wrap {
+	display: none;
+	float: none;
+	position: relative;
+	z-index: 1;
+	overflow:visible;
+	width: 100%;
+	border-top:7px solid #d3d3d3;
+	border-bottom:4px solid #d3d3d3;
+	height:308px
+	
+}
+.camera_wrap img {
+	max-width: none !important;
+}
+.camera_fakehover {
+	height: 100%;
+	min-height: 160px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.camera_src {
+	display: none;
+}
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;	
+}
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: visible;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_caption{
+font-family:'Open Sans', sans-serif;
+position:absolute;
+color:#fff;
+top:10px;
+left:30px;
+display:block;
+width:50%
+}
+
+.camera_caption span {
+	text-transform:uppercase;
+	font-size:47px;
+	display:block;
+	line-height:50px;
+	font-weight:700;
+	padding-bottom:8px;
+	letter-spacing:-1px
+
+}
+.camera_caption strong{	
+ font-size:24px;
+ line-height:29px;
+ font-weight:600;
+ display:block;
+ text-transform:uppercase;
+ padding-bottom:38px
+}
+.camera_caption p{
+font-weight:normal;
+font-size:11px;
+line-height:14px;
+}
+
+.camera_loader {
+	background: url(../img/camera-loader.gif) no-repeat center #fff;
+	border: 1px solid #343434;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	height: 36px;
+	left: 50%;
+	overflow: hidden;
+	position: absolute;
+	margin: -18px 0 0 -18px;
+	top: 50%;
+	width: 36px;
+	z-index: 3;
+}
+
+.showIt {
+	display: none;
+}
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 0px;
+	position: relative;
+}
+
+.camera_prev,
+.camera_next {
+  cursor: pointer;
+  position: absolute; 
+  z-index: 2;
+ bottom:30px;
+ width:9px;
+   height:14px;
+
+
+
+}
+.camera_prev {
+left:30px;
+}
+.camera_next {
+left:46px
+
+}
+.camera_prev > span,
+.camera_next > span {
+  display: block;
+   width:9px;
+   height:14px;
+}
+
+
+.camera_prev:hover > span {
+  background-position: 0 -13px;
+}
+
+.camera_next:hover > span{
+  background-position: right -13px;
+}
+
+.camera_next > span {
+  background: url(../img/prev-next.png) no-repeat right 0;
+
+}
+.camera_prev > span {
+  background: url(../img/prev-next.png) no-repeat 0 0;
+}
+
+ @media only screen and (min-width: 1200px) {
+	.camera_wrap{height:384px;} 
+.camera_caption{top:77px;}
+
+	 }
+	 
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+.camera_wrap  {
+	height:237px
+} 	  
+
+		  
+ }
+
+   @media only screen and (max-width: 979px) {
+	.camera_caption{display:none !important}   
+	   
+	   }
+   
+   
+ 
+ 
+  @media only screen and (max-width: 767px) {
+	.camera_wrap {
+	height:auto;
+	min-height:100px}
+	
+
+
+	.camera_prev {
+right:58px;
+}
+.camera_next {
+right:20px
+
+}
+.camera_prev,
+.camera_next {
+ bottom: 20px;
+
+}	
+.slider:before {
+    left:10%;
+    right:10%;
+}	
+	
+	
+} 
+ @media only screen and (max-width: 630px) {
+	.camera_caption strong{font-size:50px;line-height:52px}
+	 .camera_caption{top:20%}
+	 }	 
+
